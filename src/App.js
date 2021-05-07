@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import PermIdentityIcon from '@material-ui/icons/PermIdentity';
+import CallToActionIcon from '@material-ui/icons/CallToAction';
+import SettingsIcon from '@material-ui/icons/Settings';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="sidebar">
+      <div className="logo">
+
+      </div>
+      <div className="classes">
+     <div className="cls">
+       <SettingsIcon/>
+       <p>Settings</p>
+       </div>
+     <div className="cls">
+       <CallToActionIcon/>
+       <p>Lessons</p>
+       </div>
+     <div className="cls">
+        <PermIdentityIcon/>
+        <p>Student</p>
+        </div>
+     </div>
+    </div>
+    <div className="main">
+   <h3>▶  Videos</h3> 
+   <input placeholder="Insert URL Here" />
+   <div className="upload">
+    <p>Upload</p>
+   </div>
+
+    </div>
+    
+    
     </div>
   );
 }
